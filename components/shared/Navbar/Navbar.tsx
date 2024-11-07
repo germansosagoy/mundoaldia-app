@@ -1,15 +1,10 @@
 import { formatDate } from '@/lib/formatDate';
 import { Search } from 'lucide-react';
-import { PT_Serif } from 'next/font/google'
-import { Bitter } from 'next/font/google';
+import { PT_Serif, Bitter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image';
 
-const PTSerif = PT_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-}); 
-
+const PTSerif = PT_Serif({subsets: ["latin"],weight: ["400", "700"]}); 
 const bitter = Bitter({subsets: ["latin"]}) 
 
 export function Navbar() {
