@@ -36,6 +36,7 @@ export const SessionProvider = ({ children }: { children: ReactNode }) => {
 // custom hook para acceder al contexto
 export const useSession = () => {
   const context = useContext(SessionContext);
+  
   if (!context) {
     throw new Error("useSession debe usarse dentro de un SessionProvider");
   }
