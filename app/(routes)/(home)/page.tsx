@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/shared/Navbar/Navbar";
 import { FirstBlock } from "./components/FirstBlock";
 import { TopicSlider } from "./components/TopicSlider";
-import { Title } from "./components/Title";
+// import { Title } from "./components/Title";
 // import { TopBar } from "./components/TopBar";
 
 export default function Home() {
@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Navbar />
       {/* <TopBar /> */}
-      <main className="mx-auto mt-8 px-4">
-        <Title text="Mundo al Día" />
+      <main className="mx-auto">
         <TopicSlider />
+        {/* <Title text="Mundo al Día" /> */}
         <FirstBlock />
       </main>
     </>

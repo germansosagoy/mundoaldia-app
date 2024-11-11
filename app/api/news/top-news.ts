@@ -1,15 +1,11 @@
 import { NextResponse } from "next/server";
 
-// `https://newsapi.org/v2/top-headlines?country=${country}&language=es&apiKey=${process.env.NEXT_NEWS_API_KEY}`,
-
-
 export async function getTopNews() {
   try {
     const topNewsData = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_NEWS_API_KEY}`,
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_NEWS_API_KEY}&pageSize=10`,
       {
-        cache: "no-store",
-        // next: { revalidate: 3600 },
+        next: { revalidate: 3600 },
       }
     );
 
