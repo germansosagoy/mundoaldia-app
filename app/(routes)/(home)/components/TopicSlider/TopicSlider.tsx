@@ -16,7 +16,7 @@ export function TopicSlider() {
         opts={{ loop: true, align: "center" }}
         plugins={[
           Autoplay({
-            delay: 2500,
+            delay: 2000,
           }),
         ]}
       >
@@ -28,7 +28,7 @@ export function TopicSlider() {
             >
               <a
                 href={`/topics/${topic.title}`}
-                className="text-gray-800 hover:underline font-medium capitalize"
+                className="text-gray-800 hover:underline hover:text-blue-900 duration-200 font-medium capitalize"
                 style={{ letterSpacing: 'normal' }} 
               >
                 {topic.title}

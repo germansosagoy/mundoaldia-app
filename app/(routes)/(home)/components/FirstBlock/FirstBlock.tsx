@@ -8,7 +8,7 @@ const roboto = Roboto({subsets: ["latin"], weight: ["100", "300", "400", "500", 
 export function FirstBlock() {
   return (
     <section className="container mx-auto mt-4 px-4 flex flex-col md:flex-row gap-8">
-    {/* main article section */}
+      {/* main left topnews */}
     <div className="md:w-2/4 p-4">
       <TopNews />
     </div>
@@ -19,8 +19,7 @@ export function FirstBlock() {
         <h2 className={`${roboto.className} antialiased text-base font-bold text-gray-800 bg-[#FBFF22] w-max py-2 rounded-lg`}>
         Noticias destacadas
         </h2>
-
-      
+        
       </div>
       {/* quick bite section */ }
       <div className="p-1 rounded-lg">
