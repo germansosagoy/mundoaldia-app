@@ -11,9 +11,9 @@ export function TopArticle({ data }: { data: newsType }) {
     <div className="py-2 border-b border-gray-400 mb-4">
       <div className="relative w-full h-[400px]">
         <Image src={`${
-            data?.urlToImage !== null ? data.urlToImage : "/image/main-news.svg"
+            data?.urlToImage !== null ? data.urlToImage : "/images/no-image-available.jpeg"
           }`} alt={data?.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-          className="object-cover rounded-md"
+          className="object-cover rounded"
           priority={true}
         />
        <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-foreground p-3 text-start">
@@ -26,7 +26,7 @@ export function TopArticle({ data }: { data: newsType }) {
       </div>
       <p className="text-[15px] p-2">{data?.description}</p>
       <div className="flex space-x-4 my-2 p-2">
-        <Tag data={data?.author !== "" ? data.author : "Desconocido"} />
+        <Tag data={data?.author !== null ? data?.author : "Unknown"} />
         <Tag data={data?.source.name} />
         <Tag data={new Date(data?.publishedAt).toDateString()} />
       </div>

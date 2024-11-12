@@ -1,42 +1,42 @@
 export const topicsData = [
   {
-    title: "mundo",
+    category: "mundo",
     id: 1,
   },
   {
-    title: "política",
+    category: "política",
     id: 2,
   },
   {
-    title: "economía",
+    category: "economía",
     id: 3,
   },
   {
-    title: "deportes",
+    category: "deportes",
     id: 4,
   },
   {
-    title: "cultura",
+    category: "cultura",
     id: 5,
   },
   {
-    title: "ciencia",
+    category: "ciencia",
     id: 6,
   },
   {
-    title: "tecnología",
+    category: "tecnología",
     id: 7,
   },
   {
-    title: "salud",
+    category: "salud",
     id: 8,
   },
   {
-    title: "entretenimiento",
+    category: "entretenimiento",
     id: 9,
   },
   {
-    title: "turismo",
+    category: "turismo",
     id: 10,
   },
 ];

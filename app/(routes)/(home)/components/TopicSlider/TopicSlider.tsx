@@ -13,8 +13,8 @@ const hedvig = Hedvig_Letters_Serif({subsets: ["latin"]})
 
 export function TopicSlider() {
   return (
-    <div className="flex gap-x-4 justify-center lg:pb-6">
-      <Carousel className="bg-foreground w-full max-w-full mx-auto border-t border-b border-gray-100 py-4"
+    <div className="flex gap-x-4 justify-center">
+      <Carousel className="bg-foreground w-full max-w-full mx-auto border-t border-gray-100 py-4"
         opts={{ loop: true, align: "center" }}
         plugins={[
           Autoplay({
@@ -29,11 +29,11 @@ export function TopicSlider() {
               className="basis-4/4 md:basis-1/4 lg:basis-2/12"
             >
               <a
-                // href={`/topics/${topic.title}`}
+                href={`/${topic.category}`}
                 className={`${hedvig.className} antialiased text-white text-base font-medium capitalize`}
                 style={{ letterSpacing: 'normal' }} 
               >
-                {topic.title}
+                {topic.category}
               </a>
             </CarouselItem>
           ))}

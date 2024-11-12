@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function getTopNews() {
   try {
     const topNewsData = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_NEWS_API_KEY}&pageSize=10`,
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}&pageSize=10`,
       {
         next: { revalidate: 3600 },
       }
